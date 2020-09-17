@@ -11,6 +11,7 @@ const BASE_CACHE_FILES = [
     '/img/favicon.png',
     '/index.html',
     'https://www.seputarweb.com/',
+    'https://www.seputarweb.com/?m=1',
 ];
 
 const OFFLINE_CACHE_FILES = [
@@ -23,6 +24,7 @@ const OFFLINE_CACHE_FILES = [
     '/img/favicon.png',
     '/index.html',
     'https://www.seputarweb.com/',
+    'https://www.seputarweb.com/?m=1',
 ];
 
 const NOT_FOUND_CACHE_FILES = [
@@ -30,7 +32,7 @@ const NOT_FOUND_CACHE_FILES = [
     '/404.html',
 ];
 
-const OFFLINE_PAGE = '/offline/index.html';
+const OFFLINE_PAGE = '/offline/index.html';'https://www.seputarweb.com/'; 'https://www.seputarweb.com/?m=1';
 const NOT_FOUND_PAGE = '/404.html';
 
 const CACHE_VERSIONS = {
