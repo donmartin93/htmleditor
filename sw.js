@@ -9,6 +9,7 @@ const BASE_CACHE_FILES = [
     '/js/bootstrap.min.js',
     '/img/logo.png',
     '/img/favicon.png',
+    'index.html',
 ];
 
 const OFFLINE_CACHE_FILES = [
@@ -19,6 +20,7 @@ const OFFLINE_CACHE_FILES = [
     '/js/bootstrap.min.js',
     '/img/logo.png',
     '/img/favicon.png',
+    'index.html',
 ];
 
 const NOT_FOUND_CACHE_FILES = [
