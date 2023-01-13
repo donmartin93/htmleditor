@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<HTML expr:dir='data:blog.languageDirection'>
+<head>
+<meta charset='utf-8'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<title>HTML LIVE EDITOR BY Martino.id</title>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='http://www.martino.id/favicon.ico' rel='icon' type='image/x-icon'/>
+<meta content='slideseo,slide seo,slide seo blog' name='keywords'/>
+<meta content='Tutorial Dan Cara blogging untuk pemula,tips SEO,desain blog,download template SEO Friendly gratis,cara membuat blog keren,google adsense,' name='description'/>
+<meta content='slideseo,slide seo,slide seo blog' name='keywords'/>
+<link href='https://www.martino.id/' rel='canonical'/>
+  <link rel="stylesheet" type="text/css" href="editor-min.css"/>
+  <link rel="stylesheet" type="text/css" href="editor-menu.css"/>
+  <script type='text/javascript'>
+//<![CDATA[
+function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
+loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");loadCSS("https://fonts.googleapis.com/css?family=Roboto:400,300,700,300italic,500,500italic");
+//]]>
+</script>
+</head>
+<body>
+<section>
+    <div class="row btnGroup">
+      <div class="column-33 toggleGroup" style='margin-top:15px;'>
+        <button class="btn togglePane tombol bulat tooltip" id="htmlToggle" data-editor="html" title="Toggle HTML">HTML <i class='fa fa-toggle-on'></i></button>
+        <button class="btn togglePane tombol bulat tooltip" id="cssToggle" data-editor="css" title="Toggle CSS">CSS <i class='fa fa-toggle-on'></i></button>
+        <button class="btn togglePane tombol bulat tooltip" id="jsToggle" data-editor="js" title="Toggle JS">JavaScript <i class='fa fa-toggle-on'></i></button>
+        <button class="btn bulat tooltip" id="consoleToggle" title="Toggle JavaScript Console" style="display:none;">Console <i class='fa fa-toggle-on'></i></button>
+        <Br/>
+      </div><!--
+      --><div class="column-33">
+       <h1 style="font-weight:900!important;color:#2d2d2d;margin-top:5px;"><img src='https://www.martino.id/favicon.ico' alt='favicon' style="opacity:.9" /> HTML Live Editor By Martino.id </h1>
+        <center style="margin-top:5px;display:block;font-size:16px; color:#6d6d6d;">http://www.martino.id</center>
+     </div><!--
+      --><div class="column-33 btnGroup last">
+        <button class="btn tombol kecil bulat tooltip" id="previewToggle" title="Enlarge Preview">Preview</button>
+        <button class="btn tombol kecil bulat tooltip" id="clear" title="Click to clear all panes">Clear</button> <span style='opacity:.3;'>/</span>
+        <button class="btn tombol kecil bulat tooltip" id="download" title="Download to computer">Download</button> <span style='opacity:.3;'>/</span>
+        <button class="btn tombol kecil bulat tooltip" id="save" title="Save to localStorage">Save</button>
+        <button class="btn tombol kecil bulat tooltip" id="load" title="Load from localStorage">Load</button><br/>
+        <button class="btn tombol bulat tooltip" id="run" title="Run..." style='padding-left:50px;padding-right:50px;'>Run</button>
+        <button class="btn tombol bulat btn-active tooltip" id="liveEdit" title="Toggle Live Edit Mode" style='padding-left:50px;padding-right:50px;'>Live Edit <i class='fa fa-toggle-off'></i></button>
+      </div>
+    </div>
+    <div class="row windowGroup">
+      <div class="column-33">
+        <div class="window html">
+          <pre id="html"></pre>
+          <span class="windowLabel" id="htmlLabel">HTML</span>
+        </div>
+      </div><!--
+      --><div class="column-33">
+        <div class="window css">
+          <pre id="css"></pre>
+          <span class="windowLabel" id="cssLabel">CSS</span>
+        </div>
+      </div><!--
+      --><div class="column-33">
+        <div class="window js">
+          <pre id="js"></pre>
+          <span class="windowLabel" id="jsLabel">JavaScript/jQuery 1.x</span>
+        </div>
+      </div>
+    </div>
+    <div class="row console" style="display:none;">
+      <pre id="console"></pre>
+      <span class="windowLabel" id="consoleLabel">Console</span>
+    </div>
+    <div class='minheight'>
+    <div class='responsiveBtn'>
+    <h2 style="display:inline-block;"><i class='fa fa-laptop' style='vertical-align:middle;font-size:30px;'></i> Responsive Web-Design? </h2>
+      <button id='b1280' class='tombol bulat'>1280</button>
+      <button id='b1024' class='tombol bulat'>1024</button>
+      <button id='b960' class='tombol bulat'>960</button>
+      <button id='b800' class='tombol bulat'>800</button>
+      <button id='b768' class='tombol bulat'>768</button>
+      <button id='b720' class='tombol bulat'>720</button>
+      <button id='b640' class='tombol bulat'>640</button>
+      <button id='b480' class='tombol bulat'>480</button>
+      <button id='b360' class='tombol bulat'>360</button>
+      <button id='b320' class='tombol bulat'>320</button>
+    </div>
+      <div class="row preview" id="resize" style='background:#fff;'>
+        <iframe id="iframe" name="CloudEdit"
+          sandbox="allow-scripts allow-pointer-lock allow-same-origin allow-popups allow-forms"
+          allowtransparency="true">
+        </iframe>
+        <span class="windowLabel" id="iframeLabel">Preview</span>
+        <span id="iframeClose">&#215;</span>
+      </div>
+    </div>
+    <footer style='font-size:70%;margin:20px 20px 0;'>&#169;2022 <b>Martino.id HTML Live Editor</b> | Publisher With <i class="fa fa-heart"></i> by : <a style='color:#1d1d1d;font-weight:bold;text-decoration:none;' title='https://www.martino.id' class='clickProfile tooltip' href='https://www.martino.id' >Martino.id</a>
+
+    <span class='share'>Share this! on <a class='facebook' href='https://www.facebook.com/sharer/sharer.php?u=http://slideseo.blogspot.co.id/' target='_blank'><i class='fa fa-facebook-official'></i></a> <a class='twitter' href='https://twitter.com/intent/tweet?text=HTML Live Editor - SlideSeo!&amp;url=http://slideseo.blogspot.co.id/' target='_blank'><i class='fa fa-twitter'></i></a> <a class='gplus' href='https://plus.google.com/share?url=http://slideseo.blogspot.co.id/' target='_blank'><i class='fa fa-google-plus'></i></a></span></footer>
+
+  </section>
+  <div id='notif' style='display:none;'>
+  <h1><i class='fa fa-user-secret'></i><br/>SORRY!</h1>
+  <p>This Editor, only available on 960px screen width or more..</p>
+  <p><i class='fa fa-code'></i>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://rawgit.com/TheInsomniac/CloudEdit/master/js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://rawgit.com/TheInsomniac/CloudEdit/master/js/ace/ext-emmet.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://rawgit.com/TheInsomniac/CloudEdit/master/js/ace/emmet.js" type="text/javascript" charset="utf-8"></script>
+  <script src="jquery.ui.position.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="contextMenu.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="jqconsole.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="cloudEdit.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="slideseo.min.js" type="text/javascript" charset="utf-8"></script>
+  
+</body>
+</HTML>
